@@ -7,6 +7,9 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import joblib
+face_detector = cv2.CascadeClassifier('static/haarcascade_frontalface_default.xml')
+cap = cv2.VideoCapture(0)
+
 
 #### Defining Flask App
 app = Flask(__name__)
@@ -17,10 +20,7 @@ datetoday = date.today().strftime("%m_%d_%y")
 datetoday2 = date.today().strftime("%d-%B-%Y")
 
 
-#### Initializing VideoCapture object to access WebCam
-face_detector = cv2.CascadeClassifier('static/haarcascade_frontalface_default.xml')
-cap = cv2.VideoCapture(0)
-
+#### Initializing VideoC
 
 #### If these directories don't exist, create them
 if not os.path.isdir('Attendance'):
@@ -76,7 +76,7 @@ def extract_attendance():
     l = len(df)
     return names,rolls,times,l
 
-
+    
 #### Add Attendance of a specific user
 def add_attendance(name):
     username = name.split('_')[0]
