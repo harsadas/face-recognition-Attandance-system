@@ -12,3 +12,7 @@
 ![](https://raw.githubusercontent.com/harsadas/face-recognition-Attandance-system/master/project%20output%20images/Screenshot%202022-11-21%20195123.png)
 ## Finally Attandance Stored In Database
 ![](https://raw.githubusercontent.com/harsadas/face-recognition-Attandance-system/master/project%20output%20images/Screenshot%202022-11-21%20194611.png)
+
+![](https://raw.githubusercontent.com/harsadas/face-recognition-Attandance-system/master/project%20output%20images/ezgif-1-809fb9ee27.gif)
+
+
